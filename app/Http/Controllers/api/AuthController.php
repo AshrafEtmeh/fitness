@@ -106,3 +106,7 @@ class AuthController extends Controller
 
 
 // git add .
+
+// git commit -m "message"
+
+// git push

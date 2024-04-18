@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\api\AuthController;
+use App\Http\Controllers\api\ExerciseController;
+use App\Http\Controllers\api\ObjectiveExerciseController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -33,3 +35,10 @@ Route::group([
 Route::group(['middleware' => ['jwt.verify']], function() {
     //...
 });
+
+Route::get('/exercises', [ExerciseController::class, 'index']);
+Route::get('/exercises/{id}', [ExerciseController::class, 'show']);
+Route::get('/objectives', [ObjectiveExerciseController::class, 'index']);
+Route::get('/objectives/{id}', [ObjectiveExerciseController::class, 'show']);
+
+
