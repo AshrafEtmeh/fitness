@@ -15,8 +15,8 @@ return new class extends Migration
             $table->id();
             // $table->integer('objective_exercise_id');
             // $table->integer('exercise_id');
-            $table->foreignId('objective_exercise_id')->constrained('objective_exercises');
-            $table->foreignId('exercise_id')->constrained('exercises');
+            $table->foreignId('objective_exercise_id')->constrained('objective_exercises')->cascadeOnDelete();
+            $table->foreignId('exercise_id')->constrained('exercises')->cascadeOnDelete();
             $table->timestamps();
         });
     }

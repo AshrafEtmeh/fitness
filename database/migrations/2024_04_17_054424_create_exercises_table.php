@@ -13,11 +13,11 @@ return new class extends Migration
     {
         Schema::create('exercises', function (Blueprint $table) {
             $table->id();
-            $table->string('exercise_name');
-            $table->string('exercise_name_arabic')->nullable();
+            $table->string('name');
+            $table->string('name_arabic')->nullable();
             //exercise_photo gif
-            $table->text('instructions');
-            $table->text('instructions_arabic');
+            $table->text('instructions')->nullable();
+            $table->text('instructions_arabic')->nullable();
             $table->timestamps();
         });
     }

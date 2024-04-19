@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('objective_exercises', function (Blueprint $table) {
             $table->id();
-            $table->string('objective_name');
-            $table->string('objective_name_arabic')->nullable();
+            $table->string('name');
+            $table->string('name_arabic')->nullable();
             //objective_photo jpg
             $table->timestamps();
         });
