@@ -129,5 +129,6 @@ class ExerciseSeeder extends Seeder
             "name"=> "back extension",
             "name_arabic"=> "",
         ]);
+
     }
 }
