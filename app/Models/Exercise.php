@@ -13,4 +13,10 @@ class Exercise extends Model
     public function objectives(){
         return $this->belongsToMany(ObjectiveExercise::class,'steps');
     }
+    public function challenges(){
+        return $this->belongsToMany(Challenge::class);
+    }
+    public function plans(){
+        return $this->belongsToMany(Plan::class);
+    }
 }

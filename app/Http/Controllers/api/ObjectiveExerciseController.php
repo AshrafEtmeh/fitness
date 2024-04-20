@@ -20,7 +20,10 @@ class ObjectiveExerciseController extends Controller
     public function show($id){
         $objective = ObjectiveExercise::find($id);
         if($objective){
-            return $objective->exercises;
+            return [
+                'objectiveExercise' => $objective,
+                'exercises' => $objective->exercises,
+            ];
             // $exercises = ExerciseResource::collection($objective->exercises);
             // return $this->apiResponse($exercises,200,'ok');
         }
