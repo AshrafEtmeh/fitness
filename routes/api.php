@@ -1,8 +1,10 @@
 <?php
 
 use App\Http\Controllers\api\AuthController;
+use App\Http\Controllers\api\ChallengeController;
 use App\Http\Controllers\api\ExerciseController;
 use App\Http\Controllers\api\ObjectiveExerciseController;
+use App\Http\Controllers\api\PlanController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -38,7 +40,16 @@ Route::group(['middleware' => ['jwt.verify']], function() {
 
 Route::get('/exercises', [ExerciseController::class, 'index']);
 Route::get('/exercises/{id}', [ExerciseController::class, 'show']);
+//--
 Route::get('/objectives', [ObjectiveExerciseController::class, 'index']);
 Route::get('/objectives/{id}', [ObjectiveExerciseController::class, 'show']);
+//----
+Route::get('/challenges', [ChallengeController::class,'index']);
+Route::get('/challenges/{id}', [ChallengeController::class,'show']);
+//--
+Route::get('/plans', [PlanController::class,'index']);
+Route::get('/plans/{id}', [PlanController::class,'show']);
+
+
 
 

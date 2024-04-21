@@ -7,6 +7,7 @@ use App\Http\Resources\ExerciseResource;
 use App\Http\Resources\ObjectiveExerciseResource;
 use Illuminate\Http\Request;
 use App\Models\Exercise;
+use App\Models\Step;
 
 class ExerciseController extends Controller
 {
@@ -26,4 +27,5 @@ class ExerciseController extends Controller
         }
         return $this->apiResponse(null,401,'not found');
     }
+    
 }
