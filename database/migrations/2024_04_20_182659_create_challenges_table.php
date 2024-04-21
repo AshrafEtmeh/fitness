@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('challenges', function (Blueprint $table) {
             $table->id();
             $table->string('name')->unique();
-            $table->string('name_arabic')->unique();
+            $table->string('name_arabic');
             //image;
             $table->timestamps();
         });

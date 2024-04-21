@@ -19,8 +19,15 @@ class DatabaseSeeder extends Seeder
         //     'email' => 'test@example.com',
         // ]);
         $this->call([
+            ChallengeSeeder::class,
+            DietSeeder::class,
             ExerciseSeeder::class,
+            MealSeeder::class,
             ObjectiveExerciseSeeder::class,
+            PlanSeeder::class,
+            Challenge_ExerciseSeeder::class,
+            Diet_MealSeeder::class,
+            Exercise_PlanSeeder::class,
             StepSeeder::class,
         ]);
     }

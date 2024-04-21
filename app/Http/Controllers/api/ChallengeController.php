@@ -8,6 +8,7 @@ use App\Models\Challenge;
 
 class ChallengeController extends Controller
 {
+    use ApiResponseTrait;
     public function index(){
         $challenges = Challenge::all();
         return $this->apiResponse($challenges,200,'ok');
