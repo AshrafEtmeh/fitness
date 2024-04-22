@@ -22,6 +22,14 @@ class Diet_MealSeeder extends Seeder
             "meal_id"=> 1,
         ]);
         Diet_Meal::create([
+            "diet_id"=> 2,
+            "meal_id"=> 1,
+        ]);
+        Diet_Meal::create([
+            "diet_id"=> 3,
+            "meal_id"=> 1,
+        ]);
+        Diet_Meal::create([
             "diet_id"=> 1,
             "meal_id"=> 3,
         ]);

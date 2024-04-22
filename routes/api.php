@@ -2,7 +2,9 @@
 
 use App\Http\Controllers\api\AuthController;
 use App\Http\Controllers\api\ChallengeController;
+use App\Http\Controllers\api\DietController;
 use App\Http\Controllers\api\ExerciseController;
+use App\Http\Controllers\api\MealController;
 use App\Http\Controllers\api\ObjectiveExerciseController;
 use App\Http\Controllers\api\PlanController;
 use Illuminate\Http\Request;
@@ -49,6 +51,12 @@ Route::get('/challenges/{id}', [ChallengeController::class,'show']);
 //--
 Route::get('/plans', [PlanController::class,'index']);
 Route::get('/plans/{id}', [PlanController::class,'show']);
+//--
+Route::get('/diets', [DietController::class,'index']);
+Route::get('/diets/{id}', [DietController::class,'show']);
+//---
+Route::get('/meals', [MealController::class,'index']);
+Route::get('/meals/{id}', [MealController::class,'show']);
 
 
 

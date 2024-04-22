@@ -9,11 +9,11 @@ use App\Models\Challenge;
 class ChallengeController extends Controller
 {
     use ApiResponseTrait;
-    public function index(){
+    public function index() {
         $challenges = Challenge::all();
         return $this->apiResponse($challenges,200,'ok');
     }
-    public function show($id){
+    public function show($id) {
         $challenge = Challenge::find($id);
         if($challenge){
             return [
