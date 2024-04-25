@@ -7,6 +7,7 @@ use App\Http\Controllers\api\ExerciseController;
 use App\Http\Controllers\api\MealController;
 use App\Http\Controllers\api\ObjectiveExerciseController;
 use App\Http\Controllers\api\PlanController;
+use App\Http\Controllers\api\RecordController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -57,7 +58,15 @@ Route::get('/diets/{id}', [DietController::class,'show']);
 //---
 Route::get('/meals', [MealController::class,'index']);
 Route::get('/meals/{id}', [MealController::class,'show']);
-
+// records:
+    //in:
+Route::get('/recordChallenge/{user_id}/{challenge_id}', [RecordController::class, 'recordChallenge']);
+Route::get('/recordPlan/{user_id}/{plan_id}', [RecordController::class,'recordPlan']);
+Route::get('/recordExercise/{user_id}/{exercise_id}', [RecordController::class,'recordExercise']);
+    //out:
+Route::get('/challengeRecord/{id}', [RecordController::class,'challengeRecord']);
+Route::get('/planRecord/{id}', [RecordController::class,'planRecord']);
+Route::get('/exerciseRecord/{id}', [RecordController::class,'exerciseRecord']);
 
 
 

@@ -29,6 +29,9 @@ class DatabaseSeeder extends Seeder
             Diet_MealSeeder::class,
             Exercise_PlanSeeder::class,
             StepSeeder::class,
+            RecordExerciseSeeder::class,
+            RecordChallengeSeeder::class,
+            RecordPlanSeeder::class,
         ]);
     }
 }

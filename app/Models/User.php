@@ -60,4 +60,14 @@ class User extends Authenticatable implements JWTSubject
         return [];
     }
 
+    public function challenges() {
+        return $this->belongsToMany(Challenge::class,'record_challenges');
+    }
+    public function plans() {
+        return $this->belongsToMany(Plan::class,'record_plans');
+    }
+    public function exercises() {
+        return $this->belongsToMany(Exercise::class,'record_exercises');
+    }
+
 }

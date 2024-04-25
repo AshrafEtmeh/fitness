@@ -11,7 +11,10 @@ class Challenge extends Model
     use HasFactory;
 
     protected $fillable = ['name','name_arabic'];
-    public function exercises(){
+    public function exercises() {
         return $this->belongsToMany(Exercise::class);
+    }
+    public function users() {
+        return $this->belongsToMany(User::class);
     }
 }

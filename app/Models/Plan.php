@@ -19,4 +19,7 @@ class Plan extends Model
     public function diet() {
         return $this->belongsTo(Diet::class);
     }
+    public function users() {
+        return $this->belongsToMany(User::class);
+    }
 }
