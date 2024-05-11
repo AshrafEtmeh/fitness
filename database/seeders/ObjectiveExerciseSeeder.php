@@ -15,28 +15,52 @@ class ObjectiveExerciseSeeder extends Seeder
     {
         // ObjectiveExercise::truncate();
         ObjectiveExercise::create([
-            "name"=> "Full body",
-            "name_arabic"=> "كامل الجسم",
+            "name"=> "stomach muscles exercises",
+            "name_arabic"=> "تمارين عضلات البطن",
         ]);
         ObjectiveExercise::create([
-            "name"=> "Arms",
-            "name_arabic"=> "الساعدين",
+            "name"=> "Chest exercises",
+            "name_arabic"=> "تمارين الصدر",
         ]);
         ObjectiveExercise::create([
-            "name"=> "Abs",
-            "name_arabic"=> "المعدة",
+            "name"=> "Leg exercises",
+            "name_arabic"=> "تمارين الساقين",
         ]);
         ObjectiveExercise::create([
-            "name"=> "Chest",
-            "name_arabic"=> "الصدر",
+            "name"=> "Arm exercises",
+            "name_arabic"=> "تمارين الذراع",
         ]);
         ObjectiveExercise::create([
-            "name"=> "Legs",
-            "name_arabic"=> "الساقين",
+            "name"=> "Back and shoulder exercises",
+            "name_arabic"=> "تمارين الظهر و الكتفان",
         ]);
         ObjectiveExercise::create([
-            "name"=> "Back",
-            "name_arabic"=> "الظهر",
+            "name"=> "Biceps exercises",
+            "name_arabic"=> "تمارين العضلة ذات الرئيسين",
+        ]);
+        ObjectiveExercise::create([
+            "name"=> "Triceps exercises",
+            "name_arabic"=> "تمارين العضلة ثلاثية الرؤوس",
+        ]);
+        ObjectiveExercise::create([
+            "name"=> "Running exercises",
+            "name_arabic"=> "تمارين الجري و اللياقة البدنية",
+        ]);
+        ObjectiveExercise::create([
+            "name"=> "Forearm exercises",
+            "name_arabic"=> "تمارين الساعد",
+        ]);
+        ObjectiveExercise::create([
+            "name"=> "Push-ups",
+            "name_arabic"=> "تمارين  الضغط",
+        ]);
+        ObjectiveExercise::create([
+            "name"=> "Plank exercises",
+            "name_arabic"=> "تمارين البلانك",
+        ]);
+        ObjectiveExercise::create([
+            "name"=> "weight exercises",
+            "name_arabic"=> "تمارين الأوزان",
         ]);
     }
 }

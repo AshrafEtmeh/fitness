@@ -14,79 +14,39 @@ class PlanSeeder extends Seeder
     public function run(): void
     {
         Plan::create([
-            "name"=> "plan 1",
-            "name_arabic"=> "",
+            "name"=> "strengthen  immune system",
+            "name_arabic"=> "خطة تقوية الجهاز المناعي",
             "diet_id"=> 1,
         ]);
         Plan::create([
-            "name"=> "plan 2",
-            "name_arabic"=> "",
+            "name"=> "stomach muscles plan",
+            "name_arabic"=> "خطة تضخيم عضلات البطن",
             "diet_id"=> 2,
         ]);
         Plan::create([
-            "name"=> "plan 3",
-            "name_arabic"=> "",
+            "name"=> "Arm enlargement plan",
+            "name_arabic"=> "خطة تضخيم الذراعين",
             "diet_id"=> 2,
         ]);
         Plan::create([
-            "name"=> "plan 4",
-            "name_arabic"=> "",
+            "name"=> "perfect body plan",
+            "name_arabic"=> "خطة الجسم المثالي",
             "diet_id"=> 3,
         ]);
         Plan::create([
-            "name"=> "plan 5",
-            "name_arabic"=> "",
+            "name"=> "Calorie burner plan",
+            "name_arabic"=> "خطة حارق السعرات الحرارية",
             "diet_id"=> 3,
         ]);
         Plan::create([
-            "name"=> "plan 6",
-            "name_arabic"=> "",
+            "name"=> "Lose weight plan",
+            "name_arabic"=> "خطة خسارة الوزن",
             "diet_id"=> 3,
         ]);
         Plan::create([
-            "name"=> "plan 7",
-            "name_arabic"=> "",
+            "name"=> "keep fit plan",
+            "name_arabic"=> "خطة الاحتفاظ باللياقة",
             "diet_id"=> 4,
-        ]);
-        Plan::create([
-            "name"=> "plan 8",
-            "name_arabic"=> "",
-            "diet_id"=> 4,
-        ]);
-        Plan::create([
-            "name"=> "plan 9",
-            "name_arabic"=> "",
-            "diet_id"=> 4,
-        ]);
-        Plan::create([
-            "name"=> "plan 10",
-            "name_arabic"=> "",
-            "diet_id"=> 4,
-        ]);
-        Plan::create([
-            "name"=> "plan 11",
-            "name_arabic"=> "",
-            "diet_id"=> 5,
-        ]);
-        Plan::create([
-            "name"=> "plan 12",
-            "name_arabic"=> "",
-            "diet_id"=> 5,
-        ]);
-        Plan::create([
-            "name"=> "plan 13",
-            "name_arabic"=> "",
-            "diet_id"=> 5,
-        ]);
-        Plan::create([
-            "name"=> "plan 14",
-            "name_arabic"=> "",
-            "diet_id"=> 5,
-        ]);
-        Plan::create([
-            "name"=> "plan 15",
-            "name_arabic"=> "",
-            "diet_id"=> 5,
         ]);
     }
 }
