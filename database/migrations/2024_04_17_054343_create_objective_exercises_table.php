@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('name');
             $table->string('name_arabic')->nullable();
             //objective_photo jpg
+            $table->string('path')->nullable();
             $table->timestamps();
         });
     }

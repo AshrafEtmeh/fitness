@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('name')->unique();
             $table->string('name_arabic');
             //image;
+            $table->string('path');
             $table->timestamps();
         });
     }

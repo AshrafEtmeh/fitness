@@ -27,5 +27,8 @@ class ExerciseController extends Controller
         }
         return $this->apiResponse(null,401,'not found');
     }
-    
+    public function search($name){
+        return Exercise::where('name', 'like', '%'.$name.'%')->orWhere('name_arabic','like','%'.$name.'%')->get();
+    }
+
 }

@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('name_arabic');
+            $table->string('path'); //image
             $table->foreignId('diet_id')->constrained();
             $table->timestamps();
         });

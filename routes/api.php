@@ -43,6 +43,7 @@ Route::group(['middleware' => ['jwt.verify']], function() {
 
 Route::get('/exercises', [ExerciseController::class, 'index']);
 Route::get('/exercises/{id}', [ExerciseController::class, 'show']);
+Route::get('/search/{name}', [ExerciseController::class,'search']);
 //--
 Route::get('/objectives', [ObjectiveExerciseController::class, 'index']);
 Route::get('/objectives/{id}', [ObjectiveExerciseController::class, 'show']);

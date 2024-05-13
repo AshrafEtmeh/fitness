@@ -9,6 +9,7 @@ use App\Models\Diet;
 
 class PlanController extends Controller
 {
+    use ApiResponseTrait;
     public function index(){
         $plans = Plan::all();
         return $this->apiResponse($plans,200,'ok');

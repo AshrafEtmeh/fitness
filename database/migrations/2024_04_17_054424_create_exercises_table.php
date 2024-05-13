@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('name');
             $table->string('name_arabic')->nullable();
             //exercise_photo gif
+            $table->string('path');
             $table->text('instructions')->nullable();
             $table->text('instructions_arabic')->nullable();
             $table->timestamps();

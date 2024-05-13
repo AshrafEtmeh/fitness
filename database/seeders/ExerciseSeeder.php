@@ -16,118 +16,52 @@ class ExerciseSeeder extends Seeder
         Exercise::create([
             "name"=> "push-up",
             "name_arabic"=> "ضغط",
+            "path"=> "images/تمرين-الرفع-Push-up-جزء-من-تمارين-الهيت.gif",
         ]);
         Exercise::create([
-            "name"=> "pull-up",
-            "name_arabic"=> "عقلة",
+            "name"=> "side stomach",
+            "name_arabic"=> "المعدة الجانبية",
+            "path"=> "images/ElderlySpiritedKawala-size_restricted (1).gif"
         ]);
         Exercise::create([
-            "name"=> "squat",
-            "name_arabic"=> "سكواد",
+            "name"=> "bottom stomach",
+            "name_arabic"=> "المعدة السفلى",
+            "path"=> "images/5736-5.gif"
         ]);
         Exercise::create([
-            "name"=> "leg press",
-            "name_arabic"=> "",
+            "name"=> "top stomach",
+            "name_arabic"=> "المعدة العليا",
+            "path"=> "images/Pp.gif"
         ]);
         Exercise::create([
-            "name"=> "lunge",
-            "name_arabic"=> "",
+            "name"=> "Heavy Weight",
+            "name_arabic"=> "الاوزان الثقيلة",
+            "path"=> "images/main-qimg-534fffbf9f487c08ac497addf714f662.gif"
         ]);
         Exercise::create([
-            "name"=> "deadlift",
-            "name_arabic"=> "",
+            "name"=> "Light Weight",
+            "name_arabic"=> "الاوزان الخفيفة",
+            "path" => "images/Hammer Curls.gif"
         ]);
         Exercise::create([
-            "name"=> "leg extension",
-            "name_arabic"=> "",
+            "name"=> "main plank",
+            "name_arabic"=> "البلانك الاساسي",
+            "path" => "images/1283.gif"
         ]);
         Exercise::create([
-            "name"=> "bench press",
-            "name_arabic"=> "",
+            "name"=> "side plank",
+            "name_arabic"=> "البلانك الجانبي",
+            "path" => "images/Side Balnk.gif"
         ]);
         Exercise::create([
-            "name"=> "pull-down",
-            "name_arabic"=> "",
+            "name"=> "long running",
+            "name_arabic"=> "الجري الطويل",
+            "path" => "images/unnamed.gif"
         ]);
         Exercise::create([
-            "name"=> "shoulder shrug",
-            "name_arabic"=> "",
-        ]);
-        Exercise::create([
-            "name"=> "leg raise",
-            "name_arabic"=> "",
-        ]);
-        Exercise::create([
-            "name"=> "leg curl",
-            "name_arabic"=> "",
-        ]);
-        Exercise::create([
-            "name"=> "bent-over row",
-            "name_arabic"=> "",
-        ]);
-        Exercise::create([
-            "name"=> "upright row",
-            "name_arabic"=> "",
-        ]);
-        Exercise::create([
-            "name"=> "crunch",
-            "name_arabic"=> "",
-        ]);
-        Exercise::create([
-            "name"=> "russian twist",
-            "name_arabic"=> "",
-        ]);
-        Exercise::create([
-            "name"=> "standing calf raise",
-            "name_arabic"=> "",
-        ]);
-        Exercise::create([
-            "name"=> "seated calf raise",
-            "name_arabic"=> "",
-        ]);
-        Exercise::create([
-            "name"=> "chest fly",
-            "name_arabic"=> "",
-        ]);
-        Exercise::create([
-            "name"=> "shoulder press",
-            "name_arabic"=> "",
-        ]);
-        Exercise::create([
-            "name"=> "leteral raise",
-            "name_arabic"=> "",
-        ]);
-        Exercise::create([
-            "name"=> "pushdown",
-            "name_arabic"=> "",
-        ]);
-        Exercise::create([
-            "name"=> "triceps extension",
-            "name_arabic"=> "",
-        ]);
-        Exercise::create([
-            "name"=> "preacher curl",
-            "name_arabic"=> "",
-        ]);
-        Exercise::create([
-            "name"=> "standing barbell curl",
-            "name_arabic"=> "",
-        ]);
-        Exercise::create([
-            "name"=> "alternating rotating dumbbell curl",
-            "name_arabic"=> "",
-        ]);
-        Exercise::create([
-            "name"=> "hammer curl",
-            "name_arabic"=> "",
-        ]);
-        Exercise::create([
-            "name"=> "zottmann curl",
-            "name_arabic"=> "",
-        ]);
-        Exercise::create([
-            "name"=> "back extension",
-            "name_arabic"=> "",
+            "name"=> "Consecutive running",
+            "name_arabic"=> "الجري المتتالي",
+            "path" => "images/dkdsjnnhepo15.gif"
         ]);
 
     }

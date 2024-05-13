@@ -13,7 +13,7 @@ class ObjectiveExerciseController extends Controller
     use ApiResponseTrait;
 
     public function index(){
-        $objectives = ObjectiveExerciseResource::collection(ObjectiveExercise::all());
+        $objectives = ObjectiveExercise::all();
         return $this->apiResponse($objectives,200,'ok');
     }
 
