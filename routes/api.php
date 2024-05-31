@@ -71,6 +71,8 @@ Route::get('/planRecord/{id}', [RecordController::class,'planRecord']);
 Route::get('/exerciseRecord/{id}', [RecordController::class,'exerciseRecord']);
 
 Route::post('/favorite/add/{user_id}/{exercise_id}', [FavoriteController::class, 'add']);
+Route::post('/favorite/store', [FavoriteController::class, 'store']);
+
 Route::get('/favorite/show/{user_id}', [FavoriteController::class, 'show']);
 Route::delete('/favorite/delete/{id}', [FavoriteController::class, 'destroy']);
 Route::delete('/favorite/delete/all/{user_id}', [FavoriteController::class, 'destroyAll']);

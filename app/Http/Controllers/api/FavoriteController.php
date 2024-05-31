@@ -15,6 +15,13 @@ class FavoriteController extends Controller
         ]);
         return response('added to favorite successfully.');
     }
+    public function store(Request $request) {
+        Favorite::create([
+            'user_id' => $request->user_id,
+            'exercise_id' => $request->exercise_id,
+        ]);
+        return response('added to favorite successfully.');
+    }
     public function show($user_id){
         return Favorite::get()->where('user_id',$user_id);
     }
