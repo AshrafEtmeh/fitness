@@ -10,6 +10,7 @@ use App\Http\Controllers\api\PlanController;
 use App\Http\Controllers\api\RecordController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\api\FavoriteController;
 
 /*
 |--------------------------------------------------------------------------
@@ -69,5 +70,8 @@ Route::get('/challengeRecord/{id}', [RecordController::class,'challengeRecord'])
 Route::get('/planRecord/{id}', [RecordController::class,'planRecord']);
 Route::get('/exerciseRecord/{id}', [RecordController::class,'exerciseRecord']);
 
-
+Route::post('/favorite/add/{user_id}/{exercise_id}', [FavoriteController::class, 'add']);
+Route::get('/favorite/show/{user_id}', [FavoriteController::class, 'show']);
+Route::delete('/favorite/delete/{id}', [FavoriteController::class, 'destroy']);
+Route::delete('/favorite/delete/all/{user_id}', [FavoriteController::class, 'destroyAll']);
 

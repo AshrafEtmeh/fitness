@@ -16,13 +16,13 @@ class ChallengeSeeder extends Seeder
     // public function base(Model $model,$parameter1,$parameter2,$parameter3=null) {
     //     $class = new $model;
     // }
-    public function fill(Model $class,string $name, string $name_arabic) {
-        $class::create([
-            "name"=> $name,
-            "name_arabic"=> $name_arabic,
-        ]);
+    // public function fill(Model $class,string $name, string $name_arabic) {
+    //     $class::create([
+    //         "name"=> $name,
+    //         "name_arabic"=> $name_arabic,
+    //     ]);
+    //    }
 
-    }
     public function run(): void
     {
         // $this->fill(new Challenge,"level max","مستوى الوحش");
